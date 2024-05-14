@@ -109,14 +109,14 @@ body {
     border-radius: 15px;
 }
 #plantsOnCampus {
-    background-image: url(./img/background.png);
+    background-image: url(../img/plantbackground.png);
 }
 #greenBuildings {
-    background-image: url(./img/sustainable.png); /*Source: https://www.climatepolicyinitiative.org/publication/incremental-investments-in-energy-efficiency-in-green-buildings/ */
+    background-image: url(../img/sustainable.png); /*Source: https://www.climatepolicyinitiative.org/publication/incremental-investments-in-energy-efficiency-in-green-buildings/ */
     filter:brightness(0.9)
 }
 #sensors {
-    background-image: url(./img/tech.png); /*Source: https://www.freepik.com/free-photos-vectors/technology */
+    background-image: url(../img/tech.png); /*Source: https://www.freepik.com/free-photos-vectors/technology */
 }
 #SPPledgeAccordion .accordion-header {
     background-color: #35628c;
