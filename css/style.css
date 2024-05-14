@@ -27,7 +27,7 @@ body {
  #indextext2 {
     text-shadow: 3px 3px 15px white;
 }
-#indextext1:hover {
+#indextext1 {
     background: linear-gradient(90deg, #ff0000, #ff6400, #ff9800, #ffc500, #fff000); 
     -webkit-background-clip: text; /*only put gradient on text*/
     background-clip:text;
@@ -109,14 +109,14 @@ body {
     border-radius: 15px;
 }
 #plantsOnCampus {
-    background-image: url(../img/plantbackground.png);
+    background-image: url(./img/background.png);
 }
 #greenBuildings {
-    background-image: url(../img/sustainable.png); /*Source: https://www.climatepolicyinitiative.org/publication/incremental-investments-in-energy-efficiency-in-green-buildings/ */
+    background-image: url(./img/sustainable.png); /*Source: https://www.climatepolicyinitiative.org/publication/incremental-investments-in-energy-efficiency-in-green-buildings/ */
     filter:brightness(0.9)
 }
 #sensors {
-    background-image: url(../img/tech.png); /*Source: https://www.freepik.com/free-photos-vectors/technology */
+    background-image: url(./img/tech.png); /*Source: https://www.freepik.com/free-photos-vectors/technology */
 }
 #SPPledgeAccordion .accordion-header {
     background-color: #35628c;
