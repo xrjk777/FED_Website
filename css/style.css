@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+html {
+    font-size: 1.1em;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    overflow-x: hidden !important;
+}
+/* Style for Nav Bar */
+
+.navbar-toggler{
+    background-color: white;
+}
+.nav-item:hover{
+    transform:scale(1.1);
+}
+
+/*Style for Index*/
+.indexpage, .feedbackpage body, .aboutme, .spActions{
+    background-image: linear-gradient(to right top, #3e3e3e, #454550, #474e64, #435778, #35628c);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+ #indextext2 {
+    text-shadow: 3px 3px 15px white;
+}
+#indextext1:hover {
+    background: linear-gradient(90deg, #ff0000, #ff6400, #ff9800, #ffc500, #fff000); 
+    -webkit-background-clip: text; /*only put gradient on text*/
+    background-clip:text;
+    -webkit-text-fill-color: transparent;  /* removing "text-light" */
+    animation: Hover 5s  infinite;
+    background-size: 400% 100%; /* for animation */
+}
+#methods {
+    box-shadow: 2px 2px 10px white;
+}
+#methodsbtn:hover{
+    transform:scale(1.1);
+}
+#tableheader, .accordion-button.collapsed {
+    background-color: #35628c !important;
+}
+.accordion-button, .accordion-button:hover {
+    background-color: #254461 !important;
+}
+#carousel1 img {
+    height: 25rem;
+    
+    border: 5px solid;
+    border-image-source: linear-gradient(180deg, #011027, #001633, #001b40, #00204d, #00245a);
+    border-image-slice: 10%;
+}
+#carousel1 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Actions by SP */
+#flipcard {
+    width:100%;
+    height:100%;
+    transform-style: preserve-3d;
+    transition: all 1000ms ease;
+    perspective: 500px;
+    box-shadow: 2px 2px 5px black;
+
+    border: 10px solid;
+    border-image-source:linear-gradient(90deg, #051937, #001a48, #001a59, #001769, #001077);
+    border-image-slice: 10%; /* slices 'image' and puts it around border */
+}
+#flipcard:hover {
+    transform:rotateY(180deg);
+}
+.card-front {
+    width:100%;
+    height:100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 10px white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-back {
+    backface-visibility: hidden;
+    width:100%;
+    height:100%;
+    transform: rotateY(180deg);
+}
+.card-body .card-img-top {
+    border-radius: 15px;
+}
+#plantsOnCampus {
+    background-image: url(../img/plantbackground.png);
+}
+#greenBuildings {
+    background-image: url(../img/sustainable.png); /*Source: https://www.climatepolicyinitiative.org/publication/incremental-investments-in-energy-efficiency-in-green-buildings/ */
+    filter:brightness(0.9)
+}
+#sensors {
+    background-image: url(../img/tech.png); /*Source: https://www.freepik.com/free-photos-vectors/technology */
+}
+#SPPledgeAccordion .accordion-header {
+    background-color: #35628c;
+    text-shadow: 2px 2px 15px white;
+}
+#SPPledgeBtn:active, #FindOutMoreBtn:active {
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+#SPPledgeBtn, #FindOutMoreBtn {
+    border-radius: 25px;
+}
+#SPPledgeBtn:hover, #FindOutMoreBtn:hover {
+    color: white;
+    text-shadow: 3px 3px 15px white;
+    box-shadow: 2px 2px 15px #35628c;
+    background-color: #35628c;
+    transform:scale(1.1);
+}
+#pledgeBtn:hover {
+    color: white;
+    text-shadow: 3px 3px 15px white;
+    box-shadow: 2px 2px 15px #35628c;
+    background-color: #35628c;
+    transform:scale(1.1);
+}
+
+/* About Me */
+
+#myName, #myInterests,#lifeInSP, #intro{
+    text-shadow: 2px 2px 10px white;
+}
+ .aboutme .fa{
+    background: linear-gradient(90deg, #ff0000, #f36300, #de9200, #c3b700, #a2d600, #76dd54, #48e184, #00e2ad, #00c7da, #00a6ff, #0079ff, #1900ff);
+    -webkit-background-clip: text; /*only put gradient on text*/
+    background-clip:text;
+    -webkit-text-fill-color: transparent;  /* removing "text-light" */
+    animation: Hover 3s  infinite;
+    background-size: 400% 100%; /* for animation */
+
+}
+@keyframes Hover { /*Cycles gradient back and forth*/
+    0% {background-position: 0}
+    50% {background-position: 100%}
+    100%{background-position: 0}
+}
+#socials {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#socials a {
+    width:3rem;
+    height:3rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+}  
+.btn.fa-tree, .btn.fa-code{
+    animation: jello-horizontal 1.5s infinite, Hover 3s infinite;
+}
+.fa-github:hover, .fa-instagram:hover {
+	animation: jello-horizontal 0.9s ;
+}
+#SPpicture {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
+    border: 5px solid;
+    border-image-source: linear-gradient(180deg, #011027, #001633, #001b40, #00204d, #00245a);
+    border-image-slice: 10%;
+    box-shadow: 3px 3px 15px black;
+}
+#SPpicture img {
+    height: 20rem;
+}
+#whatImStudyingbtn:hover, #whatImStudyingbtn:focus, #experienceInSPbtn:hover, #experienceInSPbtn:focus{
+    box-shadow: 2px -2px 10px black;
+    background-color: #F8F9FA;
+    color: #212529;
+    font-weight: bold;
+}
+#whatImStudyinbgtn:active {
+    transform: translateY(4px);
+}
+#moreINFO {
+    text-shadow: 3px 3px 15px white;
+}
+#spbtn, #socbtn {
+    background-color: white;
+}
+#spbtn:hover, #socbtn:hover {
+    transform: scale(1.1);
+}
+#SP .card, #SOC .card{
+    border-color: #35628c !important;
+}
+#SP .card:hover, #SOC .card:hover {
+    background-color: #35628c;
+    color: white;
+    font-weight: 600;
+    transition-duration: 0.3s;
+    border-color: white !important; 
+}
+iframe {
+    box-shadow: 3px 3px 15px white;
+    width:25rem;
+    height: 20rem;
+}
+/* Style for Feedback page*/
+#feedbackheader, #queryheader, #feedbackareatop, #faqbutton, #querybutton, #feedbackbutton {
+    text-shadow: 3px 3px 15px white;
+}
+#faqbutton:hover, #querybutton:hover, #feedbackbutton:hover {
+    transform: scale(1.1);
+}
+#inputbox {
+    height: 6rem !important;
+}
+#faqbutton,#querybutton,#feedbackbutton,.nav-item, #lifeInSP { /* underline*/
+    position:relative;
+}
+#faqbutton::after,#querybutton::after,#feedbackbutton::after,.nav-item::after { /*underline*/
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #cccbcb;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+    transform: scaleX(0); /*Hides underline when not hover*/
+    transform-origin: bottom left;
+}
+
+#faqbutton:hover::after, #querybutton:hover::after, #feedbackbutton:hover::after, .nav-item:hover::after {
+    transform: scaleX(1); /*Shows underline when hover*/
+}
+
+#queryform .form-control, #feedbackform .form-control {
+    background-color: #313233;
+}
+#queryform ::placeholder, #queryform .input-group-text, .select, #feedbackform ::placeholder, #FormCheck, #rating, #staticBackdrop ::placeholder {
+    color: white !important;
+}
+#queryform .input-group-text, .select, #staticBackdrop #pledgeinputbox {
+    background-color: #454748;
+}
+input {
+    color: white !important;
+}
+/* Clock */
+@font-face{
+    font-family:"digital-clock-font";
+    src: url("../fonts/digital-7.regular.ttf");
+}
+#dateNow {
+    text-shadow: 3px 3px 15px white;
+    font-family: "digital-clock-font";
+}
+.feedbackpage .fa {
+    color: white;
+}
+#timeButton:hover {
+    background: linear-gradient(90deg, #ff9e00, #f5af35, #edbe57, #e7cb78, #e3d699);
+    -webkit-background-clip: text; /*only put gradient on text*/
+    background-clip:text;
+    -webkit-text-fill-color: transparent;  /* removing "text-light" */
+    animation: Hover 3s  infinite;
+    background-size: 400% 100%; /* for animation */
+}
+#dayDisplay{
+    background: linear-gradient(90deg, #ff9e00, #f5af35, #edbe57, #e7cb78, #e3d699);
+    -webkit-background-clip: text; /*only put gradient on text*/
+    background-clip:text;
+    -webkit-text-fill-color: transparent;  /* removing "text-light" */
+    animation: Hover 3s  infinite;
+    background-size: 400% 100%; /* for animation */
+}
+#nightDisplay{
+    background: linear-gradient(90deg, #0003ec, #4a44f6, #706cfc, #9392ff, #b6b7ff);
+    -webkit-background-clip: text; /*only put gradient on text*/
+    background-clip:text;
+    -webkit-text-fill-color: transparent;  /* removing "text-light" */
+    animation: Hover 3s  infinite;
+    background-size: 400% 100%; /* for animation */
+}
+
+/*Miscellaneous*/
+#staticBackdropLabel, #tableheader{
+    text-shadow: 2px 2px 15px white;
+}
+#backToTopBtn {
+    color: white !important;
+}
+#backToTopBtn:hover {
+    background: linear-gradient(90deg, #ff0000, #f36300, #de9200, #c3b700, #a2d600, #76dd54, #48e184, #00e2ad, #00c7da, #00a6ff, #0079ff, #1900ff);
+    -webkit-background-clip: text; /*only put gradient on text*/
+    background-clip:text;
+    -webkit-text-fill-color: transparent;  /* removing "text-light" */
+    animation: Hover 3s  infinite;
+    background-size: 400% 100%; /* for animation */
+}
+
